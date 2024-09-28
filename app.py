@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Aggiungi la cartella vendor al percorso delle librerie
+sys.path.insert(0, os.path.abspath('./vendor'))
+
 from flask import Flask  
 from flask import render_template
 from flaskwebgui import FlaskUI # import FlaskUI
